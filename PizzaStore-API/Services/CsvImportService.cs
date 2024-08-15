@@ -37,7 +37,7 @@ public class CsvImportService
                     {
                         if (!context.Orders.Any())
                         {
-                            var records = csv.GetRecords<Order>().ToList();
+                            var records = csv.GetRecords<Order>().ToList(); //NOTE: Get the data from the CSV file 
                             var data = records
                                                    .Select(p => new Order
                                                    {
@@ -47,7 +47,7 @@ public class CsvImportService
                                                    })
                                                     .ToList();
 
-                            context.Database.SetCommandTimeout(500);
+                            context.Database.SetCommandTimeout(500); //NOTE: extend the command time out
                             context.BulkInsert(data);
                         }
                     }
@@ -96,7 +96,7 @@ public class CsvImportService
                             int batchSize = 100;
                             int totalRecords = data.Count;
 
-                            for (int i = 0; i < totalRecords; i += batchSize)
+                            for (int i = 0; i < totalRecords; i += batchSize) //NOTE: In case of a large date, i use batch size to enhance the execution seeding
                             {
                                 var batch = data.Skip(i).Take(batchSize).ToList();
                                 context.Database.SetCommandTimeout(500);

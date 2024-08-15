@@ -100,7 +100,7 @@ namespace PizzaStore_API.Controllers
             return Ok(result);
         }
         [HttpPut("update-pizza")]
-        public async Task<IActionResult> UpdatePizza(string pizzaId, decimal? newPrice, string ingredients = null, string size = null)
+        public async Task<IActionResult> UpdatePizza(string pizzaId, decimal? newPrice, string size = null)
         {
             if (string.IsNullOrEmpty(pizzaId))
             {
@@ -121,11 +121,6 @@ namespace PizzaStore_API.Controllers
                 hasChanges = true;
             }
 
-            if (!string.IsNullOrEmpty(ingredients) && pizza.pizzatype.ingredients != ingredients)
-            {
-                pizza.pizzatype.ingredients = ingredients;
-                hasChanges = true;
-            }
 
             if (!string.IsNullOrEmpty(size) && pizza.size != size)
             {
