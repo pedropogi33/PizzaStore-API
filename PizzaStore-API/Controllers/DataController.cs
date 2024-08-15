@@ -99,26 +99,6 @@ namespace PizzaStore_API.Controllers
 
             return Ok(result);
         }
-        [HttpPut("update-pizza-price")]
-        public async Task<IActionResult> UpdatePizzaPrice(string pizzaId, decimal newPrice)
-        {
-            if (string.IsNullOrEmpty(pizzaId))
-            {
-                return BadRequest("Pizza ID cannot be empty.");
-            }
-
-            var pizza = await _context.Pizzas.FirstOrDefaultAsync(p => p.pizza_id == pizzaId);
-            if (pizza == null)
-            {
-                return NotFound("Pizza not found.");
-            }
-
-            pizza.price = newPrice;
-            _context.Pizzas.Update(pizza);
-            await _context.SaveChangesAsync();
-
-            return Ok($"Pizza price for id: {pizzaId} updated successfully. New price: {newPrice}");
-        }
         [HttpPut("update-pizza")]
         public async Task<IActionResult> UpdatePizza(string pizzaId, decimal? newPrice, string ingredients = null, string size = null)
         {
