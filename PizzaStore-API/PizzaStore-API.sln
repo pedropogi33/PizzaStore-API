@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32929.385
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PizzaStore-API", "PizzaStore-API\PizzaStore-API.csproj", "{3396F906-1CAC-4ECA-A1E9-CFE360D0B037}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PizzaStore-API", "PizzaStore-API.csproj", "{9CAA4B01-BAE6-4ECD-9627-38BB7E0EDF7C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{3396F906-1CAC-4ECA-A1E9-CFE360D0B037}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3396F906-1CAC-4ECA-A1E9-CFE360D0B037}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3396F906-1CAC-4ECA-A1E9-CFE360D0B037}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3396F906-1CAC-4ECA-A1E9-CFE360D0B037}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9CAA4B01-BAE6-4ECD-9627-38BB7E0EDF7C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9CAA4B01-BAE6-4ECD-9627-38BB7E0EDF7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9CAA4B01-BAE6-4ECD-9627-38BB7E0EDF7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9CAA4B01-BAE6-4ECD-9627-38BB7E0EDF7C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {392E262D-9C67-4094-9A7C-B59D2A6171CF}
+		SolutionGuid = {76E26417-16AA-4AB7-B735-14A464DD7DE6}
 	EndGlobalSection
 EndGlobal
