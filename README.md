@@ -6,6 +6,9 @@
 
 The Pizza Store API is a RESTful service designed to manage and analyze sales data for a pizza store. It allows for querying of pizza details, total sales per pizza within a specified date range and supports filtering by pizza ID, it also allows update pizza details
 
+**.NET Core 6**
+**Entity Framework Ver 6**
+
 ## API Endpoints
 
 ### Get Total Sales of Each Pizza
